@@ -1,0 +1,3 @@
+﻿This pattern has a group of objects that are expected to between them be able to solve a problem. 
+If the first Object can’t solve it, it passes the data to the next Object in the chain. In this tutorial, I’ll use it to make the right calculations based off of a String request.
+ While that is pretty simple the capabilities of this pattern are endless.

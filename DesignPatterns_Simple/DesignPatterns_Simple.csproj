@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C529292-A0E3-4987-B5E0-463A182DAFDC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPatterns_Simple</RootNamespace>
+    <AssemblyName>DesignPatterns_Simple</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Creational\Abstract_Factory\ConcreteProducts.cs" />
+    <Compile Include="Creational\Abstract_Factory\HeroFactory.cs" />
+    <Compile Include="Creational\Abstract_Factory\HondaFactory.cs" />
+    <Compile Include="Creational\Abstract_Factory\IBike.cs" />
+    <Compile Include="Creational\Abstract_Factory\IScooter.cs" />
+    <Compile Include="Creational\Abstract_Factory\IVehicleFactory.cs" />
+    <Compile Include="Creational\Abstract_Factory\VehicleClient.cs" />
+    <Compile Include="Structural\Adapter\EnemyRobot.cs" />
+    <Compile Include="Structural\Adapter\EnemyRobotAdapter.cs" />
+    <Compile Include="Structural\Adapter\EnemyTank.cs" />
+    <Compile Include="Structural\Adapter\IEnemyAttacker.cs" />
+    <Compile Include="Creational\Builder\IRobotBuilder.cs" />
+    <Compile Include="Creational\Builder\IRobotPlan.cs" />
+    <Compile Include="Creational\Builder\OldRobotBuilder.cs" />
+    <Compile Include="Creational\Builder\Robot.cs" />
+    <Compile Include="Creational\Builder\RobotEngineer.cs" />
+    <Compile Include="Behavioral\Chain_Of_Responsibility\Add.cs" />
+    <Compile Include="Behavioral\Chain_Of_Responsibility\Divide.cs" />
+    <Compile Include="Behavioral\Chain_Of_Responsibility\IChain.cs" />
+    <Compile Include="Behavioral\Chain_Of_Responsibility\Multiply.cs" />
+    <Compile Include="Behavioral\Chain_Of_Responsibility\Number.cs" />
+    <Compile Include="Behavioral\Chain_Of_Responsibility\Subtract.cs" />
+    <Compile Include="Structural\Decorator\PlainPizza.cs" />
+    <Compile Include="Structural\Decorator\TomatoSauce.cs" />
+    <Compile Include="Structural\Decorator\ToppingDecorator.cs" />
+    <Compile Include="Structural\Decorator\Mozzarella.cs" />
+    <Compile Include="Structural\Decorator\IPizza.cs" />
+    <Compile Include="Creational\Factory\Car.cs" />
+    <Compile Include="Creational\Factory\IVehicle.cs" />
+    <Compile Include="Creational\Factory\Truck.cs" />
+    <Compile Include="Creational\Factory\VehicleFactory.cs" />
+    <Compile Include="Behavioral\Observer\IObserver.cs" />
+    <Compile Include="Behavioral\Observer\ISubject.cs" />
+    <Compile Include="Behavioral\Observer\StockGrabber.cs" />
+    <Compile Include="Behavioral\Observer\StockObserver.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Creational\Singleton\Logging.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Creational\Abstract_Factory\Abstract Factory Design Pattern.txt" />
+    <Content Include="Creational\Builder\Builder Design Pattern.txt" />
+    <Content Include="Creational\Factory\Factory Design Pattern.txt" />
+    <Content Include="Structural\Adapter\Adapter Design Pattern.txt" />
+    <Content Include="Behavioral\Chain_Of_Responsibility\Chain of Responsibility Design Pattern.txt" />
+    <Content Include="Structural\Decorator\Decorator Design Pattern.txt" />
+    <Content Include="Behavioral\Observer\Observer Design Pattern.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

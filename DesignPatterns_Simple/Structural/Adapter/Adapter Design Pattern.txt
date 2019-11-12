@@ -1,0 +1,6 @@
+﻿Create some kind of adapter in order to make use of two distinct interfaces.
+in our example we have "EnemyTank" & "EnemyRobot".
+Both have different methods.
+The "IEnemyAttacker" interface defines the attack methods.
+So, in order to make "EnemyRobot" to work with our interface we'll create an adapter class "EnemyRocotAdapter". This class must implement the "IEnemyAttacker" interface.
+Next, implement the interface inside the "EnemyRobotAdapter" class and use "EnemyRobot" object to call the methods.

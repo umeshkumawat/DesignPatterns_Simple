@@ -1,0 +1,11 @@
+﻿The Decorator allows you to modify an object dynamically. You would use it when you want the capabilities of inheritance with subclasses, but you need to add functionality at run time.
+
+It is more flexible than inheritance. The Decorator Design Pattern simplifies code because you add functionality using many simple classes. 
+Also, rather than rewrite old code you can extend it with new code and that is always good.
+
+Typical components are - 
+
+1. An Coponent Interface comtaining members that will be implemented by concrete class and decorator
+2. A Component class which implements the Component interface.
+3. A Decorator class (Abstract Class) which also implements the Component interface and contains the reference of Component class.
+4. ConcreteDecorator class which inherits from Decorator class and provides a decorator for components.
