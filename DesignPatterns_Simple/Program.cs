@@ -10,6 +10,7 @@ using DesignPatterns_Simple.Singleton;
 using DesignPatterns_Simple.Factory;
 using DesignPatterns_Simple.Decorator;
 using DesignPatterns_Simple.Creational.Abstract_Factory;
+using DesignPatterns_Simple.Creational.Builder;
 
 namespace DesignPatterns_Simple
 {
@@ -97,6 +98,15 @@ namespace DesignPatterns_Simple
             IPizza basicPizza = new Mozzarella(new TomatoSauce(new PlainPizza()));
             Console.WriteLine(basicPizza.getDescription());
             Console.ReadLine(); 
+            */
+            #endregion
+
+            #region BUILDER PATTERN
+            /*
+            VehicleCreator vehicleCreator = new VehicleCreator(new HeroBuilder());
+            vehicleCreator.CreateVehicle();
+            Vehicle vehicle = vehicleCreator.GetVehicle;
+            vehicle.ShowInfo(); 
             */
             #endregion
 
